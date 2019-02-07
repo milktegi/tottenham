@@ -1,10 +1,21 @@
 import React from 'react';
-
+import { CityLogo } from '../ui/icons';
 const Footer = () => {
 	return (  
-		<div>
-			footer
-		</div>
+		<footer className="bck_blue">
+			<div className="footer_logo">
+			<CityLogo
+							link={true}
+							linkTo="/"
+							width="70px"
+							height="70px"
+							
+							/>
+			</div>
+			<div className="footer_discl">
+				Tottenham 2019. All rights reserved.
+			</div>
+		</footer>
 	);
 }
  
