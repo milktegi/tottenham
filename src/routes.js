@@ -8,7 +8,7 @@ const Routes = (props) => {
 	return (  
 		<Layout>
 			<Switch>
-				{/** defube route */}
+				{/** define route */}
 				<Route path="/" exact component={Home}/>
 			</Switch>
 		</Layout>
