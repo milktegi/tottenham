@@ -20,7 +20,7 @@ class Stripe extends Component {
 				delay: 200
       },
       {
-				background: '#111735',
+				background: '#ffffff',
 				left: 600,
 				rotate: 25,
 				top: -498,

@@ -86,7 +86,7 @@ class Players extends Component {
 								padding: '15px'
 							}}
 							>
-								팀 선수 자세히 보기
+								더 많은 팀 선수 보기
 							</Tag>
 						</div>
 					</div>
