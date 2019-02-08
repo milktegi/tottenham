@@ -393,6 +393,7 @@ footer .footer_discl {
 
 .home_meetplayers { 
     background: #ffffff;
+    font-family: 'Righteous', cursive;
 }
 
 .home_meetplayers_wrapper {
@@ -401,6 +402,7 @@ footer .footer_discl {
 }
 
 .home_meetplayers .home_card_wrapper {
+    
     position: relative;
     float: left;
     width: 630px;
@@ -410,6 +412,7 @@ footer .footer_discl {
 .home_meetplayers .home_text_wrapper {
     float: right;
     width: 390px;
+    font-family: 'Righteous', cursive;
 }
 
 /*=============================
