@@ -1,6 +1,17 @@
 import React from 'react';
 
-const FormFields = ({ id, formdata }) => {
+const FormFields = ({ id, formdata, change }) => {
+
+  const showError = () =>{
+		let errorMessage = 	<div className="error_label">
+			{
+				formdata.validation && !formdata.valid ?
+				formdata.validaitonMessage
+				: null
+			}
+		</div>
+		return errorMessage;
+	}
 
 	const renderTemplate = () => {
 		let formTemplate = null;
@@ -11,7 +22,10 @@ const FormFields = ({ id, formdata }) => {
 					<input
 					{...formdata.config}
 					value={formdata.value}
+					onChange={(event)=> change({event, id})}
 					/>
+				 	{showError()}
+		
 				</div>
 			)
 			break;
