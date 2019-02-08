@@ -7,6 +7,7 @@ body {
 a {
     text-decoration: none;
     color: inherit;
+    padding: 0;
 }
 
 .link_logo {
@@ -224,10 +225,10 @@ footer .footer_discl {
 ===============================*/
 
 .home_matches_wrapper {
-    background: #111735;
+    background: #0e1731;
     margin-top:9px;
     padding: 50px 0px;
-    color: white;
+    color: #0e1731
 }
 
 .home_matches_wrapper .home_matches {
@@ -252,6 +253,7 @@ footer .footer_discl {
 
 .match_block .match_date{
     color:#ffffff;
+    padding: 10px;
     font-size:18px;
 }
 
@@ -292,9 +294,9 @@ footer .footer_discl {
 
 .match_block .match_wrapper .match_top .right,
 .match_block .match_wrapper .match_bottom .right { 
-    background: #0e1731;
+    background: #d8dae0;
     width: 70px;
-    color: #ffffff;
+    color: #0e1731;
     font-size: 50px;
     text-align: center;
     padding-top: 6px;

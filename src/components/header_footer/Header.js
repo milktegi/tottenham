@@ -16,12 +16,13 @@ class Header extends React.Component {
 				backgroundColor: '#111735',
 				boxShadow: 'none',
 				padding: '5px 0',
-				borderBottom: '1px solid #111735'
+				borderBottom: '5px solid #ffffff'
 			}}
 			>
 			<Toobar
 			style={{
-				display: 'flex'
+				display: 'flex',
+			
 			}}
 			>
 				<div style={{ flexGrow: 1 }}>

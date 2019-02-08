@@ -1,40 +1,43 @@
 import React, { Component } from 'react';
 import { firebaseLooper, reverseArray } from '../../ui/misc';
 import { dbMatches, firebase } from '../../../firebase';
+import MatchesBlock from '../../ui/matches_block';
+import Slide from 'react-reveal/Slide';
 
 class Blocks extends Component {
-	
-	state = {
-		matches: []
-	}
-	
-	componentDidMount() {
-		dbMatches.limitToLast(6).once('value').then(snapshot =>{
-		const matches =	firebaseLooper(snapshot);
-		this.setState({
-			matches: reverseArray(matches)
-		})
-			
-		})
+  state = {
+    matches: []
+  };
 
-	}
+  componentDidMount() {
+    dbMatches.limitToLast(6).once('value').then((snapshot) => {
+      const matches = firebaseLooper(snapshot);
+      this.setState({
+        matches: reverseArray(matches)
+      });
+    });
+  }
 
-	
-	// 추후 map
-	showMatches = () => (
-		<div>
-			match
-		</div>
-	)
-	
-	render(){
-		console.log(this.state.matches)
-		return(
-			<div className="home_matches">
-				{this.showMatches(this.state.matches)}
-			</div>
-		)
-	}
+  // 추후 map
+  showMatches = (matches) =>
+    matches
+      ? matches.map((match) => (
+          <Slide bottom key={match.id}>
+            <div className='item'>
+              <div className='wrapper'>
+                <MatchesBlock match={match} />
+              </div>
+            </div>
+          </Slide>
+        ))
+      : null;
+
+  render() {
+    // console.log(this.state)
+    return (
+      <div className='home_matches'>{this.showMatches(this.state.matches)}</div>
+    );
+  }
 }
 
 export default Blocks;
