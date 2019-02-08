@@ -17,10 +17,9 @@ firebase.initializeApp(config);
 // 데이터베이스 연결
 // 위에 있는 import구문 호출 
 const db = firebase.database();
+const dbMatches = db.ref('matches');
 
-// 참조 넘김 
-db.ref('matches')
-	.once('value')
-	.then((snapshot=>{
-		console.log(snapshot.val())
-	}))
+export {
+	firebase,
+	dbMatches
+}

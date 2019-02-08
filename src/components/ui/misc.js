@@ -12,6 +12,8 @@ export const Tag = (props) => {
 			display: 'inline-block',
 			fontFamily: 'monospace',
 			fontWeight: '900',
+			...props.add
+		
 
 		}}>
 		{props.children}
@@ -28,3 +30,25 @@ export const Tag = (props) => {
 	}
 }
 
+export const firebaseLooper = (snapshot) => {
+	const data = [];
+	snapshot.forEach((childSnapshot)=>{
+		data.push({
+			...childSnapshot.val(),
+			id: childSnapshot.key
+		})
+	})
+	return data;
+}
+
+export const reverseArray = arr => {
+	// let reversed = [];
+	// for(let i = arr.length - 1; i >= 0; i--){
+	// 	reversed.push(arr[i])
+	// }
+	// return reversed;
+	let reversed = [...arr].reverse();
+	return reversed;
+	// return [...arr].reverse();
+
+}
