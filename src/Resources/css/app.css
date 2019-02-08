@@ -14,11 +14,11 @@ a {
 }
 
 .bck_blue {
-    background: #111735;
+    background: #ffffff;
 }
 
 .bck_lblue {
-    background: #98c5e9;
+    background: #111735;
 }
 
 .img_cover {
@@ -224,9 +224,10 @@ footer .footer_discl {
 ===============================*/
 
 .home_matches_wrapper {
-    background: #98c5e9;
+    background: #111735;
     margin-top:9px;
     padding: 50px 0px;
+    color: white;
 }
 
 .home_matches_wrapper .home_matches {
