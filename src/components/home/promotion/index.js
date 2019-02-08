@@ -1,5 +1,7 @@
 import React from 'react';
 import PromotionAnimation from './Animation';
+import Enroll from './Enroll'
+
 
 const Promotion = () => {
   return (
@@ -11,6 +13,7 @@ const Promotion = () => {
     >
       <div className="container">
         <PromotionAnimation />
+        <Enroll/>
       </div>
     </div>
   );
