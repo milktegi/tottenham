@@ -9,7 +9,7 @@ const MatchesHome = () => {
 				<Tag
 					bck="#0e1731"
 					size="50px"
-					color="#fffff"	
+					color="#ffffff"	
 				>
 				MATCHES
 				</Tag>
