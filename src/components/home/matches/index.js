@@ -11,7 +11,7 @@ const MatchesHome = () => {
 					size="50px"
 					color="#ffffff"	
 				>
-				주요 경기
+				최신 경기/결과
 				</Tag>
 				<Blocks/>
 				<Tag
