@@ -478,8 +478,9 @@ footer .footer_discl {
 .promotion_wrapper .promotion_animation .left { 
     text-transform: uppercase;
     text-transform: uppercase;
-    font-size: 150px;
-    font-family: 'Righteous', cursive;
+    font-size: 100px;
+    font-weight: 900;
+    font-family: 'NanumSquare', sans-serif;
     flex-grow: 1;
     color:#d5ebfd;
     line-height: 135px;
