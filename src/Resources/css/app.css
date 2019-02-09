@@ -55,9 +55,10 @@ button {
     background: #0d1831;
     color: #ffffff;
     border: 1px solid #0d1831;
-    padding: 5px 10px;
+    padding: 10px 15px;
     margin-top: 10px;
-    font-size: 15px;
+    margin-bottom: 10px;
+    font-size: 17px;
     border-radius: 3px;
 }
 
@@ -511,14 +512,16 @@ footer .footer_discl {
 }
 
 .promotion_wrapper .enroll_discl {
-    font-weight: 300;
-    font-size: 12px;
+    font-family: 'NanumSquare', sans-serif;
+    font-weight: 500;
+    font-size: 23px;
     width: 271px;
     margin: 0 auto;
     padding: 10px 0px;
 }
 
 .promotion_wrapper .enroll_input {
+    font-family: 'NanumSquare', sans-serif;
     width: 330px;
     margin: 0 auto;
     padding: 10px 0px;

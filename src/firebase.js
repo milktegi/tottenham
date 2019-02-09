@@ -18,8 +18,10 @@ firebase.initializeApp(config);
 // 위에 있는 import구문 호출 
 const db = firebase.database();
 const dbMatches = db.ref('matches');
+const dbPromotions = db.ref('promotions');
 
 export {
 	firebase,
-	dbMatches
+	dbMatches,
+  dbPromotions
 }
