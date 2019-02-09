@@ -8,8 +8,8 @@ const PromotionAnimation = () => {
       <div className="left">
         <Zoom>
           <div>
-            <span>WIN A</span>
-            <span>JERSEY!</span>
+            <span>팀 유니폼</span>
+            <span>당첨 이벤트!</span>
           </div>
         </Zoom>
       </div>

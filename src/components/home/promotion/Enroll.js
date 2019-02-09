@@ -46,13 +46,28 @@ class Enroll extends Component {
 		// 새로운 상태 대입 
 		newFormdata[element.id] = newElement;
 		this.setState({
+			formError: false,
 			formdata: newFormdata
 		})
 
 	}
 
-	submitForm = () => {
-
+	submitForm = (event) => {
+		event.preventDefault();
+		let dataToSubmit = {};
+		let formIsValid = true;
+		for(let key in this.state.formdata){
+			dataToSubmit[key] = this.state.formdata[key].value;
+			formIsValid = this.state.formdata[key].valid && formIsValid
+		}
+		if(formIsValid){
+			console.log(formIsValid)
+		} else {
+			this.setState({
+				
+				formError: true
+			})
+		}
 	}
 	
 	render() {
@@ -62,7 +77,7 @@ class Enroll extends Component {
 				<div className="enroll_wrapper">
 					<form onSubmit={(event)=> this.submitForm(event)}>
 						<div className="enroll_title">
-							이메일을 입력하세요
+						 지금 응모할 수 있습니다.
 						</div>
 						<div className="enroll_input">
 							<FormFields
@@ -70,6 +85,17 @@ class Enroll extends Component {
 							formdata={this.state.formdata.email}
 							change={(element)=> this.updateForm(element)}
 							/>
+							{
+								this.state.formError ? 
+								(
+									<div className="error_label">
+										이메일을 바르게 입력해주세요.
+									</div> )
+								: null
+							}
+							<button
+							onClick={(event) => this.submitForm(event)}
+							>응모하기</button>
 						</div>
 					</form>
 				</div>
