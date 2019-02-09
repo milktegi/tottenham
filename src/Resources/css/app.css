@@ -589,14 +589,18 @@ footer .footer_discl {
 ===============================*/
 
 .admin_container {
-    margin-top: 96px;
+    margin-top: 95px;
     display: flex;
+ 
 }
 
 .admin_container .admin_left_nav {
     min-height: 100vh;
     background: #282828;
     border-right: 2px solid #01285e;
+    font-family: 'NanumSquare', sans-serif;
+    font-weight: 900;
+
 }
 
 .admin_container .admin_right {
